@@ -1,0 +1,161 @@
+/* body{
+    /* background-color: darkgrey  */
+    background-image: url('https://abrakadabra.fun/uploads/posts/2022-02/1644779510_1-abrakadabra-fun-p-fon-dlya-chata-vaiber-1.jpg')
+} */
+/* .card-body{
+    background-image: url('https://phonoteka.org/uploads/posts/2021-04/1617819549_3-p-odnotonnii-fon-dlya-telefona-3.jpg');
+} */
+
+.hader{
+    height: 200px;
+    width: auto;
+    background-color: rgb(47, 49, 113);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.logo2 {
+    border-radius: 100px; /* Радиус скругления */
+    border: 2px solid yellow; /* Параметры рамки */
+    box-shadow: 0 0 7px #666; /* Параметры тени */
+}
+.menu{
+    list-style: none;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu_item{
+    margin-right: 15px;
+    font-size: 15px;
+}
+.menu_link{
+    text-decoration: none;
+    color: #5d51d9;
+    position: relative;
+}
+.menu_link:hover{
+    color: #f3c558;
+    text-decoration: underline 2px;
+}
+.lk{
+    text-decoration: none;
+    color: #5d51d9;
+    position: relative;
+}
+.lk:hover{
+    color: #f3c558;
+    text-decoration: underline 2px;
+}
+.content{
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.recommendations, .popular{
+    height: 350px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+.film{
+    height: 270px;
+    width: 200px;
+    
+}
+.poster{
+    position: relative;
+}
+.poster:hover .grade{
+    transition: 2s;
+    opacity: 1;
+    cursor: pointer
+}
+.poster:hover .subscript{
+    transition: 2s;
+    opacity: 1;
+    cursor: pointer
+}
+.grade{
+    position: absolute;
+    top: 5%;
+    left: -5px;
+    height: 17px;
+    background-image: url(https://adilet.net/file/%D0%AF%D1%80%D0%BA%D0%BE-%D0%B7%D0%B5%D0%BB%D0%B5%D0%BD%D1%8B%D0%B9%20BA%207108A_2.jpg);
+    bottom: 10%;
+    color: #c9c9c9;
+opacity: 0; transition: 2s
+} 
+.subscript{
+    position: absolute;
+    top: 92%;
+    left: 67%;
+    bottom: 10%;
+    color: #c9c9c9;
+opacity: 0; transition: 2s
+}
+body{
+    /* background-color: rgb(23, 24, 43); */
+    background-image: url('https://abrakadabra.fun/uploads/posts/2022-02/1644779510_1-abrakadabra-fun-p-fon-dlya-chata-vaiber-1.jpg');
+
+    font-family: 'Courier New', Courier, monospace;
+}
+body div{
+    color: gray;
+}
+@media (min-width: 768px) and (max-width: 1400px){
+    .hader{
+        justify-content: space-evenly;
+    }
+    .content {
+        flex-direction: column;
+        margin-left: 100px;
+    }
+    .recommendations, .popular{
+        height: auto;
+        justify-content: space-around;
+        align-content: stretch;
+    }
+    .film{
+        margin-bottom: 50px;
+        margin-right: 10px;
+    }
+    .film:last-child{
+        margin-right: 0;
+    }
+}
+@media (max-width: 767px){
+    .hader{
+        flex-direction: column;
+        align-content: center;
+        height: auto;
+    }
+    .menu{
+        margin-bottom: 6px;
+        margin-left: 10px;
+    }
+    .content {
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .recommendations, .popular{
+        height: auto;
+        justify-content: space-around;
+        align-content: stretch;
+    }
+    .film{
+        margin-bottom: 35px;
+        margin-right: 10px;
+    }
+    .film:last-child{
+        margin-right: 0;
+    }
+}
+
